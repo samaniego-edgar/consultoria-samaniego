@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="encabezado">
+
+            <div class="contenedor_logo">
+                <img class="logo" src="/Consultoría Samaniego/Assets/Imagenes/Quimera en Blanco.png" alt="">
+                <h1 class="titulo">Quimera Consulting</h1>
+            </div>
+
+            <div class="contenedor_links">
+                <ul class="links">
+                    <Li><a href="index.html ">Home</a></Li>
+                    <li><a href="servicios.html ">Servicios</a></li>
+                    <li><a href="galeria.html ">Galería</a></li>
+                    <Li><a href="contacto.html ">Contacto</a></li>
+                    <li><a href="quienessomos.html ">Quienes Somos</a></li>
+                    <li><a href="hse40.html ">HSE 4.0</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <!-- Formulario para recepción de solicitud de información -->
+
+        <div class="formulario">
+
+            <div>
+                <fieldset>
+                    <form action="validar.php"></form>
+                    <legend>Deja tus datos y nos pondremos en contacto</legend>
+
+                    <div>
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido" minlength="3" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo eléctrónico</label>
+                        <input id="email" name="email" type="email" placeholder="Ingrese correo electrónico" required>
+                    </div>
+
+                    <div>
+                        <label for="telefono">Ingrese número telefónico</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" required>
+                    </div>
+
+                    <div>
+                        <label for="inquiry">Detalle su necesidad</label>
+                        <textarea name="inquiry" id="inquiry" cols="70" rows="10" placeholder="Detalle el servicio que requiere"></textarea>
+
+                    </div>
+
+                    <div>
+                        <input id="enviar" type="submit" value="Enviar">
+                        <input id="reset" type="reset" value="Limpiar">
+                    </div>
+
+                </fieldset>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7391.276041061837!2d-101.01589608149108!3d22.139772986928126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98d1aff1e609%3A0x90c26fc0ddab69c8!2sT%C3%A9cnica%20134%2C%20Universitaria%2C%2078290%20San%20Luis%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1642270589147!5m2!1ses-419!2smx"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <footer class="pie">
+            <p>Derechos Reservados. Técnica 134, San Luis Potosí, San Luis Potosí, México</p>
+        </footer>
+    </div>
+</body>
+
+</html>
