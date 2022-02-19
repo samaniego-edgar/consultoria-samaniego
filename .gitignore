@@ -1,1 +1,3 @@
-*.zip
+*.zipgit
+node_modules/
+
