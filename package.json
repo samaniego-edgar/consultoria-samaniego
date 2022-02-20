@@ -1,7 +1,7 @@
 {
-    "name": "proyecto",
+    "name": "Consultoría - Desafío SASS",
     "version": "1.0.0",
-    "description": "Primer read me para desafío de github",
+    "description": "Primer read me para desafío de github y SASS",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +20,7 @@
     "homepage": "https://github.com/samaniego-edgar/consultoria-samaniego#readme",
     "devDependencies": {
         "node-sass": "^7.0.1",
-        "nodemon": "^2.0.15"
+        "nodemon": "^2.0.15",
+        "parcel-bundler": "^1.12.5"
     }
 }

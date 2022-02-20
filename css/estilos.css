@@ -1,11 +1,101 @@
-.class {
-  background-color: #fff; }
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu:wght@900&display=swap");
+/* Breakpoints */
+html {
+  height: 100%;
+  scroll-behavior: smooth; }
 
-.clasepruebados {
-  border: 0ch; }
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.3125rem; }
 
-.integral {
-  background-image: none; }
+section {
+  margin: 0px;
+  padding: 0; }
 
-.colores {
-  border-radius: 0%; }
+footer {
+  color: white; }
+
+h1,
+h2,
+h3, h4, h5 {
+  padding: 1.5git arem;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center; }
+
+ul, li {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center; }
+
+p {
+  text-align: justify; }
+
+/*Clases Utilitarios*/
+.bg-primario {
+  background-color: white; }
+
+.bg-header {
+  background-color: #ffe6bb; }
+
+.bg-neutro {
+  background-color: #00384e; }
+
+.bg-acento {
+  background-color: rgba(46, 110, 20, 0.383); }
+
+/*Clases generales*/
+.header {
+  height: 4rem;
+  width: 100%;
+  border-bottom: 3px ridge black;
+  background-color: #ffe6bb; }
+  .header__title {
+    font-size: 2rem; }
+    @media screen and (max-width: 24em) {
+      .header__title {
+        font-size: 1rem; } }
+    @media screen and (max-width: 29.75em) {
+      .header__title {
+        font-size: 1rem; } }
+  .header__logo {
+    width: 8rem;
+    height: auto;
+    margin: 1px;
+    display: inline-block; }
+    @media screen and (max-width: 24em) {
+      .header__logo {
+        width: 5rem; } }
+  @media screen and (max-width: 24em) and (max-width: 29.75em) {
+    .header__logo {
+      font-size: 5rem; } }
+  .header__navbar {
+    color: white; }
+
+.secciones {
+  display: flex;
+  padding: 5px; }
+  .secciones__central {
+    max-width: 90%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  @media screen and (max-width: 75em) {
+    .secciones {
+      display: inline-block; } }
+
+.epp {
+  width: 200px; }
+  .epp:hover {
+    transition: 1s;
+    transform: scale(1.1); }
+
+/*SCSS para HSE 4.0*/
+.videoyoutube {
+  display: flex; }
+  .videoyoutube:hover {
+    transition: 1s;
+    transform: scale(1.6); }
