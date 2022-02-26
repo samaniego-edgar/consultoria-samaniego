@@ -1,0 +1,37 @@
+/*Mapas para las futuras categorías del sitio*/
+
+$colors:(ambiental: green,
+    seguridad: black,
+    perdidas: red,
+    management: yellow,
+    salud: blue,
+    plataforma: lightgreen);
+
+/*Variables*/
+
+$color-primario:white;
+$color-neutro: rgb(0, 56, 78);
+$color-acento:rgba(46, 110, 20, 0.383);
+$color-header:rgb(255, 230, 187);
+
+$texto-primario:'Nunito',
+sans-serif;
+$text-acento:'ubuntu',
+sans-serif;
+$texto-contraste:white;
+
+/* Breakpoints */
+
+$bp-small: 24em;
+$bp-small-2: 29.75em;
+$bp-small-3: 39.8em;
+$bp-med: 46.8em;
+$bp-med-2: 48em;
+$bp-large: 50em;
+$bp-large-2: 54.4em;
+$bp-xl: 60em;
+$bp-xl-2: 67em;
+$bp-xxl: 75em;
+$bp-1044p: 90em;
+$bp-1080p: 120em;
+$bp-4k: 125em;
