@@ -3,11 +3,6 @@
 /*Mapas para las futuras categorías del sitio*/
 /*Variables*/
 /* Breakpoints */
-<<<<<<< HEAD
-/*Clases generales*/
-.prueba {
-  background-color: beige; }
-=======
 /*Mixin*/
 /*MAP*/
 .ambiental {
@@ -63,8 +58,8 @@
 .boton--borrar {
   border: 2px solid red;
   color: black; }
->>>>>>> 3bd16723b50e0f22c37e698c6d2780573dc5367a
 
+/*Clases generales*/
 html {
   height: 100%;
   scroll-behavior: smooth; }
@@ -86,15 +81,13 @@ h2,
 h3,
 h4,
 h5 {
-<<<<<<< HEAD
   padding: 1.5rem;
   font-family: "ubuntu", sans-serif;
   font-weight: 900;
   line-height: 1;
-=======
+  text-align: center;
   font-weight: bold;
   font-style: italic;
->>>>>>> 3bd16723b50e0f22c37e698c6d2780573dc5367a
   text-align: center; }
 
 ul,
@@ -144,6 +137,12 @@ p {
   @media screen and (max-width: 24em) and (max-width: 29.75em) {
     .header__logo {
       font-size: 5rem; } }
+  @media screen and (max-width: 24em) {
+    .header {
+      width: 5rem; } }
+  @media screen and (max-width: 24em) and (max-width: 29.75em) {
+    .header {
+      font-size: 5rem; } }
   .header__navbar {
     color: white; }
 
@@ -161,15 +160,24 @@ p {
       display: inline-block; } }
 
 .epp {
-  width: 200px; }
+  width: 200px;
+  /*SCSS para HSE 4.0*/ }
   .epp:hover {
-    transition: 350ms;
-    transform: scale(1.1); }
-
-/*SCSS para HSE 4.0*/
-.videoyoutube {
-  display: flex; }
-  .videoyoutube:hover {
+    transition: 1s; }
+    @media screen and (max-width: 75em) {
+      .epp:hover {
+        display: inline-block; } }
+  .epp .epp {
+    width: 200px; }
+    .epp .epp:hover {
+      transition: 350ms;
+      transform: scale(1.1); }
+  .epp .videoyoutube {
+    display: flex; }
+    .epp .videoyoutube:hover {
+      transition: 1s;
+      transform: scale(1.6); }
+  .epp:hover {
     transition: 1s;
     transform: scale(1.6); }
 
