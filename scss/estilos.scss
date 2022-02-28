@@ -156,10 +156,9 @@ p {
             font-size: 5rem;
         }
     }
-}
-
-&__navbar {
-    color: $texto-contraste;
+    &__navbar {
+        color: $texto-contraste;
+    }
 }
 
 .secciones {
