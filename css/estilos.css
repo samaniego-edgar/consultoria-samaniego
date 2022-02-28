@@ -1,8 +1,69 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu:wght@900&display=swap");
+/*Mapas para las futuras categorías del sitio*/
+/*Variables*/
 /* Breakpoints */
+<<<<<<< HEAD
 /*Clases generales*/
 .prueba {
   background-color: beige; }
+=======
+/*Mixin*/
+/*MAP*/
+.ambiental {
+  color: green;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; }
+
+.seguridad {
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; }
+
+.perdidas {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; }
+
+.management {
+  color: yellow;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; }
+
+.salud {
+  color: blue;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; }
+
+.plataforma {
+  color: lightgreen;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; }
+
+/*Extender botones formulario*/
+.boton, .boton--enviar, .boton--borrar {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
+
+.boton--enviar {
+  border: 2px solid green;
+  color: green; }
+
+.boton--borrar {
+  border: 2px solid red;
+  color: black; }
+>>>>>>> 3bd16723b50e0f22c37e698c6d2780573dc5367a
 
 html {
   height: 100%;
@@ -25,10 +86,15 @@ h2,
 h3,
 h4,
 h5 {
+<<<<<<< HEAD
   padding: 1.5rem;
   font-family: "ubuntu", sans-serif;
   font-weight: 900;
   line-height: 1;
+=======
+  font-weight: bold;
+  font-style: italic;
+>>>>>>> 3bd16723b50e0f22c37e698c6d2780573dc5367a
   text-align: center; }
 
 ul,
@@ -97,7 +163,7 @@ p {
 .epp {
   width: 200px; }
   .epp:hover {
-    transition: 1s;
+    transition: 350ms;
     transform: scale(1.1); }
 
 /*SCSS para HSE 4.0*/
@@ -106,3 +172,15 @@ p {
   .videoyoutube:hover {
     transition: 1s;
     transform: scale(1.6); }
+
+/*SCSS para formulario*/
+.formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.ubicacion {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }

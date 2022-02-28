@@ -1,21 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu:wght@900&display=swap');
 @import '_variables';
-$color-primario:white;
-$color-neutro: rgb(0,
-56,
-78);
-$color-acento:rgba(46,
-110,
-20,
-0.383);
-$color-header:rgb(255,
-230,
-187);
-$texto-primario:'Nunito',
-sans-serif;
-$text-acento:'ubuntu',
-sans-serif;
-$texto-contraste:white;
+
+/*Mixin*/
+
+@mixin categoria--texto {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+@mixin centrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*MAP*/
+
+@each $categoria,
+$color in $colors {
+    .#{$categoria} {
+        color: $color;
+        @include categoria--texto();
+    }
+}
+
+
+/*Extender botones formulario*/
+
+.boton {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.boton--enviar {
+    @extend .boton;
+    border: 2px solid green;
+    color: green;
+}
+
+.boton--borrar {
+    @extend .boton;
+    border: 2px solid red;
+    color: black;
+}
+
 
 /*Clases generales*/
 
@@ -53,6 +88,7 @@ h5 {
     font-weight: 900;
     line-height: 1;
     text-align: center;
+    @include categoria--texto();
 }
 
 ul,
@@ -114,9 +150,16 @@ p {
             }
         }
     }
-    &__navbar {
-        color: $texto-contraste;
+    @media screen and (max-width: $bp-small) {
+        width: 5rem;
+        @media screen and (max-width: $bp-small-2) {
+            font-size: 5rem;
+        }
     }
+}
+
+&__navbar {
+    color: $texto-contraste;
 }
 
 .secciones {
@@ -138,17 +181,39 @@ p {
     width: 200px;
     &:hover {
         transition: 1s;
-        transform: scale(1.1);
+        @media screen and (max-width: $bp-xxl) {
+            display: inline-block;
+        }
     }
-}
-
-
-/*SCSS para HSE 4.0*/
-
-.videoyoutube {
-    display: flex;
+    .epp {
+        width: 200px;
+        &:hover {
+            transition: 350ms;
+            transform: scale(1.1);
+        }
+    }
+    /*SCSS para HSE 4.0*/
+    .videoyoutube {
+        display: flex;
+        &:hover {
+            transition: 1s;
+            transform: scale(1.6);
+        }
+    }
     &:hover {
         transition: 1s;
         transform: scale(1.6);
     }
+}
+
+
+/*SCSS para formulario*/
+
+.formulario {
+    @include centrar();
+}
+
+.ubicacion {
+    padding: 1rem;
+    @include centrar();
 }
