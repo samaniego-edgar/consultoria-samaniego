@@ -1,13 +1,13 @@
 /*Mapas para las futuras categorías del sitio*/
 
-$colors:(ambiental: green, seguridad: black, perdidas: red, management: yellow, salud: blue, plataforma: lightgreen);
+$colors:(ambiental: green, seguridad: black, perdidas: red, management: rgb(192, 147, 0), salud: blue, plataforma: rgb(78, 238, 78));
 
 /*Variables*/
 
 $color-primario:white;
 $color-neutro: rgb(0, 56, 78);
-$color-acento:rgba(46, 110, 20, 0.383);
-$color-header:rgb(255, 230, 187);
+$color-acento:rgba(80, 188, 251, 0.732);
+$color-header:rgb(95, 169, 238);
 $texto-primario:'Nunito',
 sans-serif;
 $text-acento:'ubuntu',

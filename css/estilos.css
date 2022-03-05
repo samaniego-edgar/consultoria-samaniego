@@ -4,41 +4,61 @@
 /*Variables*/
 /* Breakpoints */
 /*Mixin*/
+.imagen {
+  width: 25em;
+  height: auto;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 24em) {
+    .imagen {
+      width: 15em; } }
+
+.div1 {
+  background-image: url(/assets/Imagenes/green-background.jpg);
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  border-bottom-left-radius: 100px; }
+
+.titlediv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 /*MAP*/
 .ambiental {
   color: green;
   font-weight: bold;
-  font-style: italic;
   text-align: center; }
 
 .seguridad {
   color: black;
   font-weight: bold;
-  font-style: italic;
   text-align: center; }
 
 .perdidas {
   color: red;
   font-weight: bold;
-  font-style: italic;
   text-align: center; }
 
 .management {
-  color: yellow;
+  color: #c09300;
   font-weight: bold;
-  font-style: italic;
   text-align: center; }
 
 .salud {
   color: blue;
   font-weight: bold;
-  font-style: italic;
   text-align: center; }
 
 .plataforma {
-  color: lightgreen;
+  color: #4eee4e;
   font-weight: bold;
-  font-style: italic;
   text-align: center; }
 
 /*Extender botones formulario*/
@@ -87,14 +107,14 @@ h5 {
   line-height: 1;
   text-align: center;
   font-weight: bold;
-  font-style: italic;
   text-align: center; }
 
 ul,
 li {
   text-decoration: none;
   list-style-type: none;
-  text-align: center; }
+  text-align: left;
+  font-weight: 500; }
 
 p {
   text-align: justify; }
@@ -104,20 +124,20 @@ p {
   background-color: white; }
 
 .bg-header {
-  background-color: #ffe6bb; }
+  background-color: #5fa9ee; }
 
 .bg-neutro {
   background-color: #00384e; }
 
 .bg-acento {
-  background-color: rgba(46, 110, 20, 0.383); }
+  background-color: rgba(80, 188, 251, 0.732); }
 
 /*Clases generales*/
 .header {
   height: 4rem;
   width: 100%;
   border-bottom: 3px ridge black;
-  background-color: #ffe6bb; }
+  background-color: #5fa9ee; }
   .header__title {
     font-size: 2rem; }
     @media screen and (max-width: 24em) {
@@ -148,38 +168,49 @@ p {
 
 .secciones {
   display: flex;
+  flex-direction: row;
   padding: 5px; }
   .secciones__central {
     max-width: 90%;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   @media screen and (max-width: 75em) {
     .secciones {
       display: inline-block; } }
 
 .epp {
-  width: 200px;
-  /*SCSS para HSE 4.0*/ }
+  width: 200px; }
   .epp:hover {
-    transition: 1s; }
+    transition: 1s;
+    transform: scale(1.2); }
     @media screen and (max-width: 75em) {
       .epp:hover {
         display: inline-block; } }
-  .epp .epp {
-    width: 200px; }
-    .epp .epp:hover {
-      transition: 350ms;
-      transform: scale(1.1); }
-  .epp .videoyoutube {
-    display: flex; }
-    .epp .videoyoutube:hover {
-      transition: 1s;
-      transform: scale(1.6); }
-  .epp:hover {
-    transition: 1s;
-    transform: scale(1.6); }
+
+/*SCSS para HSE 4.0*/
+.hse40container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 10px; }
+  .hse40container__vid {
+    display: flex;
+    justify-content: center; }
+
+.videoyoutube {
+  display: flex;
+  height: 400px;
+  width: 700px; }
+  .videoyoutube:hover {
+    transition: .5s;
+    transform: scale(1.03); }
+
+.icon {
+  display: flex;
+  justify-content: center; }
 
 /*SCSS para formulario*/
 .formulario {
@@ -192,3 +223,28 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+
+.galeria {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  /*SCSS para quienes somos*/ }
+  .galeria__contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto; }
+  .galeria__img {
+    width: 250px;
+    height: 250px; }
+
+.partners {
+  display: flex; }
+  .partners__img {
+    width: 100%;
+    height: auto; }
