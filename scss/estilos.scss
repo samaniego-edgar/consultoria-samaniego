@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu:wght@900&display=swap');
 @import '_variables';
 
-
 /*Mixin*/
+
 @mixin categoria--texto {
     font-weight: bold;
     font-style: italic;
     text-align: center;
 }
 
-@mixin Centrar {
+@mixin centrar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
+
 
 /*MAP*/
 
@@ -24,8 +24,8 @@ $color in $colors {
         color: $color;
         @include categoria--texto();
     }
-
 }
+
 
 /*Extender botones formulario*/
 
@@ -42,17 +42,17 @@ $color in $colors {
 .boton--enviar {
     @extend .boton;
     border: 2px solid green;
-
     color: green;
 }
 
 .boton--borrar {
     @extend .boton;
-  border: 2px solid red;
+    border: 2px solid red;
     color: black;
 }
 
 
+/*Clases generales*/
 
 html {
     height: 100%;
@@ -79,6 +79,11 @@ h2,
 h3,
 h4,
 h5 {
+    padding: 1.5rem;
+    font-family: ($text-acento);
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
     @include categoria--texto();
 }
 
@@ -87,12 +92,12 @@ li {
     text-decoration: none;
     list-style-type: none;
     text-align: center;
-
 }
 
 p {
     text-align: justify
 }
+
 
 /*Clases Utilitarios*/
 
@@ -114,54 +119,47 @@ p {
 
 
 /*Clases generales*/
+
 .header {
     height: 4rem;
     width: 100%;
     border-bottom: 3px ridge black;
     background-color: $color-header;
-
-
     &__title {
         font-size: 2rem;
-
-        @media screen and (max-width:$bp-small) {
+        @media screen and (max-width: $bp-small) {
             font-size: 1rem;
-
         }
-
         @media screen and (max-width:$bp-small-2) {
             font-size: 1rem;
-
         }
     }
-
     &__logo {
         width: 8rem;
         height: auto;
         margin: 1px;
         display: inline-block;
-
         @media screen and (max-width: $bp-small) {
             width: 5rem;
-
-            @media screen and (max-width:$bp-small-2) {
+            @media screen and (max-width: $bp-small-2) {
                 font-size: 5rem;
-
             }
-
         }
     }
-
+    @media screen and (max-width: $bp-small) {
+        width: 5rem;
+        @media screen and (max-width: $bp-small-2) {
+            font-size: 5rem;
+        }
+    }
     &__navbar {
         color: $texto-contraste;
     }
 }
 
-
 .secciones {
     display: flex;
     padding: 5px;
-
     &__central {
         max-width: 90%;
         padding-bottom: 2rem;
@@ -169,44 +167,48 @@ p {
         flex-direction: column;
         align-items: center;
     }
-
     @media screen and (max-width:$bp-xxl) {
         display: inline-block;
-
     }
 }
-
-
 
 .epp {
     width: 200px;
-
-
     &:hover {
-        transition: 350ms;
-        transform: scale(1.1);
+        transition: 1s;
+        @media screen and (max-width: $bp-xxl) {
+            display: inline-block;
+        }
     }
-}
-
-
-/*SCSS para HSE 4.0*/
-
-.videoyoutube {
-    display: flex;
-
+    .epp {
+        width: 200px;
+        &:hover {
+            transition: 350ms;
+            transform: scale(1.1);
+        }
+    }
+    /*SCSS para HSE 4.0*/
+    .videoyoutube {
+        display: flex;
+        &:hover {
+            transition: 1s;
+            transform: scale(1.6);
+        }
+    }
     &:hover {
         transition: 1s;
         transform: scale(1.6);
-
     }
 }
+
 
 /*SCSS para formulario*/
 
 .formulario {
-    @include Centrar();
+    @include centrar();
 }
 
-.ubicacion{
+.ubicacion {
     padding: 1rem;
-    @include Centrar();}
+    @include centrar();
+}
