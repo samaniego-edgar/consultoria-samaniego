@@ -14,22 +14,9 @@
     justify-content: center;
 }
 
-.imagen {
-    width: 25em;
-    height: auto;
-    flex-wrap: wrap;
-
-    @media screen and (max-width:$bp-small) {
-        width: 15em;
 
 
-    }
-
-
-}
-
-
-.div1 {
+.banner {
     background-image: url(../assets/Imagenes/green-background.jpg);
     height: 400px;
     width: 100%;
@@ -43,11 +30,21 @@
 
 }
 
-.titlediv {
+.banner--title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.banner--imagen {
+    width: 25em;
+    height: auto;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:$bp-small) {
+        width: 15em;
+    }
 }
 
 /*MAP*/

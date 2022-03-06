@@ -4,16 +4,8 @@
 /*Variables*/
 /* Breakpoints */
 /*Mixin*/
-.imagen {
-  width: 25em;
-  height: auto;
-  flex-wrap: wrap; }
-  @media screen and (max-width: 24em) {
-    .imagen {
-      width: 15em; } }
-
-.div1 {
-  background-image: url(/assets/Imagenes/green-background.jpg);
+.banner {
+  background-image: url(../assets/Imagenes/green-background.jpg);
   height: 400px;
   width: 100%;
   display: flex;
@@ -24,11 +16,19 @@
   align-items: center;
   border-bottom-left-radius: 100px; }
 
-.titlediv {
+.banner--title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.banner--imagen {
+  width: 25em;
+  height: auto;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 24em) {
+    .banner--imagen {
+      width: 15em; } }
 
 /*MAP*/
 .ambiental {
