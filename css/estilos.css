@@ -5,7 +5,7 @@
 /* Breakpoints */
 /*Mixin*/
 .banner {
-  background-image: url(../assets/Imagenes/green-background.jpg);
+  background-image: url(./assets/Imagenes/green-background.jpg);
   height: 400px;
   width: 100%;
   display: flex;
@@ -195,15 +195,17 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 10px; }
+  padding: 10px;
+  height: 700px;
+  width: 700%; }
   .hse40container__vid {
     display: flex;
     justify-content: center; }
 
 .videoyoutube {
   display: flex;
-  height: 400px;
-  width: 700px; }
+  height: 100%;
+  widht: 100%; }
   .videoyoutube:hover {
     transition: .5s;
     transform: scale(1.03); }

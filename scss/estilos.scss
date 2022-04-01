@@ -14,8 +14,6 @@
     justify-content: center;
 }
 
-
-
 .banner {
     background-image: url(./assets/Imagenes/green-background.jpg);
     height: 400px;
@@ -27,7 +25,6 @@
     align-content: center;
     align-items: center;
     border-bottom-left-radius: 100px;
-
 }
 
 .banner--title {
@@ -41,11 +38,11 @@
     width: 25em;
     height: auto;
     flex-wrap: wrap;
-
-    @media screen and (max-width:$bp-small) {
+    @media screen and (max-width: $bp-small) {
         width: 15em;
     }
 }
+
 
 /*MAP*/
 
@@ -116,7 +113,6 @@ h5 {
     line-height: 1;
     text-align: center;
     @include categoria--texto();
-
 }
 
 ul,
@@ -158,42 +154,33 @@ p {
     width: 100%;
     border-bottom: 3px ridge black;
     background-color: $color-header;
-
     &__title {
         font-size: 2rem;
-
         @media screen and (max-width: $bp-small) {
             font-size: 1rem;
         }
-
         @media screen and (max-width:$bp-small-2) {
             font-size: 1rem;
         }
     }
-
     &__logo {
         width: 8rem;
         height: auto;
         margin: 1px;
         display: inline-block;
-
         @media screen and (max-width: $bp-small) {
             width: 5rem;
-
             @media screen and (max-width: $bp-small-2) {
                 font-size: 5rem;
             }
         }
     }
-
     @media screen and (max-width: $bp-small) {
         width: 5rem;
-
         @media screen and (max-width: $bp-small-2) {
             font-size: 5rem;
         }
     }
-
     &__navbar {
         color: $texto-contraste;
     }
@@ -203,7 +190,6 @@ p {
     display: flex;
     flex-direction: row;
     padding: 5px;
-
     &__central {
         max-width: 90%;
         padding-bottom: 2rem;
@@ -212,7 +198,6 @@ p {
         align-items: center;
         justify-content: center;
     }
-
     @media screen and (max-width:$bp-xxl) {
         display: inline-block;
     }
@@ -220,17 +205,15 @@ p {
 
 .epp {
     width: 200px;
-
     &:hover {
         transition: 1s;
         transform: scale(1.2);
-
         @media screen and (max-width: $bp-xxl) {
             display: inline-block;
         }
     }
-
 }
+
 
 /*SCSS para HSE 4.0*/
 
@@ -239,17 +222,18 @@ p {
     flex-direction: column;
     gap: 1em;
     padding: 10px;
-
-    &__vid{display: flex;
-    justify-content: center;}
-
+    height: 700px;
+    width: 700%;
+    &__vid {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .videoyoutube {
     display: flex;
-    height: 400px;
-    width: 700px;
-
+    height: 100%;
+    widht: 100%;
     &:hover {
         transition: .5s;
         transform: scale(1.03);
@@ -260,6 +244,7 @@ p {
     display: flex;
     justify-content: center;
 }
+
 
 /*SCSS para formulario*/
 
@@ -272,13 +257,11 @@ p {
     @include centrar();
 }
 
-
 .galeria {
     display: grid;
     gap: 1rem;
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-
     &__contenedor {
         display: flex;
         flex-direction: column;
@@ -289,19 +272,15 @@ p {
         width: 100%;
         height: auto;
     }
-
     &__img {
         width: 250px;
         height: 250px;
     }
-
     /*SCSS para quienes somos*/
 }
 
 .partners {
     display: flex;
-
-
     &__img {
         width: 100%;
         height: auto;
