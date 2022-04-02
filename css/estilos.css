@@ -73,7 +73,7 @@
 .formato {
   max-width: 550px;
   width: 90%;
-  background: beige;
+  background: #bfe6ff;
   padding: 40px;
   border-radius: 5px;
   box-sizing: border-box; }
@@ -92,23 +92,29 @@ textarea {
   border: none;
   border-bottom: 1px solid blue; }
 
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid pink; }
+
 /*Extender botones formulario*/
-.boton, .boton--enviar, .boton--borrar {
-  width: 100px;
-  height: 40px;
-  background-color: white;
-  text-align: center;
-  color: black;
-  border-radius: 20px;
-  border: 1px solid black; }
+.error {
+  color: red; }
 
-.boton--enviar {
-  border: 2px solid green;
+.contenderBoton {
+  text-align: center; }
+
+input[type="submit"] {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 200px;
+  background: linear-gradient(to right, #0fd3f6, #1931cc);
+  color: white; }
+
+.error-border {
+  border-bottom: 1px solid red; }
+
+#exito {
   color: green; }
-
-.boton--borrar {
-  border: 2px solid red;
-  color: black; }
 
 /*Clases generales*/
 html {
@@ -238,7 +244,7 @@ p {
   height: 100%;
   width: 30%; }
   .videoyoutube:hover {
-    transition: .5s;
+    transition: 0.5s;
     transform: scale(1.03); }
 
 .icon {

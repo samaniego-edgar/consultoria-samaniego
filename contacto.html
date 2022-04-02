@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    
     <header class="header">
         <nav class="navbar navbar-light navbar-expand-lg navbar-brand">
             <a href="index.html">
@@ -57,29 +58,30 @@
 
         <div class="container formulario">
 
-            <form class="formato" action="validar.php">
+            <form onsubmit="event.preventDefault(); validarFormulario()" class="formato">
                 <h3>Deja tus datos y nos pondremos en contacto</h3>
 
                 <label class="etiqueta" for="nombre">Nombre:</label>
-                <input id="nombre" type="text" placeholder="Nombre Completo" required>
+                <input id="nombre" type="text" placeholder="Nombre Completo">
                 <small class="error"></small>
 
 
                 <label class="etiqueta" for="email">Correo eléctrónico:</label>
-                <input required id="email" type="email" placeholder="Ingrese su correo electrónico" required>
+                <input id="email" type="email" placeholder="Ingrese su correo electrónico">
                 <small class="error"></small>
 
-                <label class="etiqueta" for="telefono">Ingrese número telefónico</label>
+                <!-- <label class="etiqueta" for="telefono">Ingrese número telefónico</label>
                 <input id="telefono" name="telefono" type="tel" placeholder="Teléfono a diez dígitos" required>
-                <small class="error"></small>
+                <small class="error"></small> -->
 
 
                 <label class="etiqueta" for="inquiry">Detalle su necesidad</label>
                 <textarea name="inquiry" id="inquiry" cols="45" rows="10" placeholder="Detalle el servicio que requiere"></textarea>
                 <small class="error"></small>
-                <div>
-                    <input class="boton--enviar" id="enviar" type="submit" value="Enviar">
-                    <input class="boton--borrar" id="reset" type="reset" value="Limpiar">
+                
+                <div class="contenedorBoton">
+                    <input type="submit" value="Enviar">
+                    <!-- <input class="boton--borrar" id="reset" type="reset" value="Limpiar"> -->
                     <p id="exito"></p>
                 </div>
             </form>
@@ -98,7 +100,7 @@
     </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="/javascript/entregable1.js"></script>
 </body>
 
 </html>
