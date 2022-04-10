@@ -67,17 +67,17 @@ for (var i = 0; i < removerItemsCarro.length; i++) {
 }
 
 function actualizarTotalCarro() {
-  var contenedorItemCarrito =
-    document.getElementsByClassName("carrito--items")[0]
-  var filasDelCarrito =
-    contenedorItemCarrito.getElementsByClassName("carrito--fila")
+  var contenedorItemCarrito = document.getElementsByClassName("carrito--items")[0]
+  var filasDelCarrito = contenedorItemCarrito.getElementsByClassName("carrito--fila")
+  var total = 0 
   for (var i = 0; i < filasDelCarrito.length; i++) {
     var filaCarrito = filasDelCarrito[i];
-    var precioDelItem =
-      filaCarrito.getElementsByClassName("carrito--precio")[0]
-    var cantidadDeItems = filaCarrito.getElementsByClassName(
-      "carrito--cantidad__input"
-    )[0]
-    console.log(precioDelItem, cantidadDeItems)
+    var precioDelItem = filaCarrito.getElementsByClassName("carrito--precio")[0]
+    var cantidadDeItems = filaCarrito.getElementsByClassName("carrito--cantidad__input")[0]
+    var precio = parseFloat(precioDelItem.innerText.replace('$',''))
+    var cantidad = cantidadDeItems.value
+    total = total + (precio*cantidad)
   }
+
+document.getElementsByClassName ('carrito--total__precio')[0].innerText = '$' + total
 }
