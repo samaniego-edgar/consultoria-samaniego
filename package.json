@@ -1,26 +1,28 @@
 {
-    "name": "quimera-consulting",
-    "version": "1.0.0",
-    "description": "Primer read me para desafío de github",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
-        "watch-css": "nodemon -e scss -x \"npm run build-css"
-    },
-
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/samaniego-edgar/consultoria-samaniego.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/samaniego-edgar/consultoria-samaniego/issues"
-    },
-    "homepage": "https://github.com/samaniego-edgar/consultoria-samaniego#readme",
-    "devDependencies": {
-        "node-sass": "^7.0.1",
-        "nodemon": "^2.0.15"
-    }
+  "name": "quimera-consulting",
+  "version": "1.0.0",
+  "description": "Primer read me para desafío de github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samaniego-edgar/consultoria-samaniego.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samaniego-edgar/consultoria-samaniego/issues"
+  },
+  "homepage": "https://github.com/samaniego-edgar/consultoria-samaniego#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
 }
